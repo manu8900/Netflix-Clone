@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const Container = styled.div`
   display: flex;
@@ -14,11 +14,11 @@ export const Container = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   grid-gap: 15px;
 
   @media screen and (max-width: 1000px) {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 `;
 
@@ -42,7 +42,7 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.p`
-  font-size: 13px;
+  font-size: 14px;
   color: #757575;
   margin-bottom: 40px;
 `;
